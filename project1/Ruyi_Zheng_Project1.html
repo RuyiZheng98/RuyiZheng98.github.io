@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ruyi Zheng's Personal Website</title>
+  <style>
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  span {
+    color: greenyellow;
+
+  }
+
+
+  header {
+    background-color: darksalmon;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transition: height 0.2s ease-out;
+  }
+
+  header:hover {
+    height: 60px;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  header li a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out;
+  }
+
+  header li a:hover {
+    background-color: gray;
+  }
+
+  header li a.active {
+    background-color: gray;
+  }
+
+  section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home {
+    background-color: lightblue;
+  }
+
+  #reflects {
+    background-color: lightcoral;
+  }
+
+  #services {
+    background-color: lightgreen;
+  }
+
+  #contact {
+    background-color: lightyellow;
+  }
+
+  .font-row {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* Media query for devices with a maximum width of 767px */
+  @media (max-width: 767px) {
+    nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+
+  a {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: red;
+  }
+
+  img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ddd;
+  }
+   
+
+  </style>
+</head>
+
+<body>
+  <header>
+      <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#reflects">Reflects</a>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="font-row">
+      <h1>Welcome to my Personal Website!</h1>
+      <p></p>
+      <h2>About me</h2>
+      <p>I'm a graduate student at Northeastern University, majoring in Computer Science.</p>
+      <p>Before that, I was an Economics student!</p>
+    </div>
+    </section>
+
+    <section id="projects">
+      <div class="font-row">
+      <h1>My Projects</h1>
+      <p>I have worked on a variety of projects, including web applications and mobile apps.</p>
+      <h2>National Parks Searching Engine - Web Developer</h2>
+      <p>Designed and established data-driven web application, provided users with the information about the national parks in the Washington, allowed user customized searches, rate and comment on national parks</p>
+      <p>Processed data in an ETL and stored in a data warehouse, utilized MySQL and JDBC to ensure data storage and accessibility. Created front-end webpages with JSP and utilized CSS to improve styling and formats</p>
+      <h2>21 Days - Android Developer</h2>
+      <p>An Android app that helps track habit development. After finishing a 21-day routine, users will receive a virtual animal as a reward</p>
+      <p>Integrated the app with Firebase Authentication to allow user access on different devices to increase adherence</p>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="font-row">
+      <h1>Contact Me</h1>
+      <p>You can reach me at jouyzheng@gmail.com</p>
+      <p>My LinkedIn: <a href="https://www.linkedin.com/in/ruyi-zheng-3b2786182/">Ruyi's LinkedIn</a></p>
+      <p>My GitHub: <a href="https://github.com/RuyiZheng98">Ruyi's GitHub</a></p>
+
+      </div>
+    </section>
+
+    <section id="reflects">
+      <div class="font-row">
+      <img src="https://picsum.photos/300/200/" alt="A random image">
+      <h1>I have a super cute cat, her name is Luna</h1>
+      <h1></h1>
+      <h1>I like watching movies, </h1>
+      <p>for example, La La Land, Interstellar, Farewell My Concubine</p>
+      <h1></h1>
+      <h1>I like reading, </h1>
+      <p>my favourite writer is <span>Xiaobo Wang</span></p>
+
+      </div>
+    </section>
+
+
+
+</body>
+
+</html>
