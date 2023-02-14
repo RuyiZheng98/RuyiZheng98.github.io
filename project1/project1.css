@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  span {
+    color: greenyellow;
+
+  }
+
+
+  header {
+    background-color: darksalmon;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transition: height 0.2s ease-out;
+  }
+
+  header:hover {
+    height: 60px;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  header li a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out;
+  }
+
+  header li a:hover {
+    background-color: gray;
+  }
+
+  header li a.active {
+    background-color: gray;
+  }
+
+  section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home {
+    background-color: lightblue;
+  }
+
+  #reflects {
+    background-color: lightcoral;
+  }
+
+  #services {
+    background-color: lightgreen;
+  }
+
+  #contact {
+    background-color: lightyellow;
+  }
+
+  .font-row {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* Media query for devices with a maximum width of 767px */
+  @media (max-width: 767px) {
+    nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+
+  a {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: red;
+  }
+
+  img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ddd;
+  }
